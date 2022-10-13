@@ -15,6 +15,10 @@
 		4EA9221528F5A88100662565 /* InformationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9221428F5A88100662565 /* InformationUITests.swift */; };
 		4EA9221728F5A88100662565 /* InformationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9221628F5A88100662565 /* InformationUITestsLaunchTests.swift */; };
 		4EB4AE5128F857DD00D16B34 /* Buckets2022.json in Resources */ = {isa = PBXBuildFile; fileRef = 4EB4AE5028F857DD00D16B34 /* Buckets2022.json */; };
+		4EB4AE5428F8673600D16B34 /* BucketListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB4AE5328F8673600D16B34 /* BucketListItem.swift */; };
+		4EB4AE5828F8690E00D16B34 /* BucketRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB4AE5728F8690E00D16B34 /* BucketRowView.swift */; };
+		4EB4AE5A28F8692C00D16B34 /* BucketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB4AE5928F8692C00D16B34 /* BucketDetailView.swift */; };
+		4EB4AE5C28F869ED00D16B34 /* PdfKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB4AE5B28F869ED00D16B34 /* PdfKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		4EA9221428F5A88100662565 /* InformationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationUITests.swift; sourceTree = "<group>"; };
 		4EA9221628F5A88100662565 /* InformationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4EB4AE5028F857DD00D16B34 /* Buckets2022.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Buckets2022.json; sourceTree = "<group>"; };
+		4EB4AE5328F8673600D16B34 /* BucketListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItem.swift; sourceTree = "<group>"; };
+		4EB4AE5728F8690E00D16B34 /* BucketRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketRowView.swift; sourceTree = "<group>"; };
+		4EB4AE5928F8692C00D16B34 /* BucketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDetailView.swift; sourceTree = "<group>"; };
+		4EB4AE5B28F869ED00D16B34 /* PdfKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,7 @@
 		4EA921F828F5A87F00662565 /* Information */ = {
 			isa = PBXGroup;
 			children = (
+				4EB4AE5228F8671700D16B34 /* Model */,
 				4EB4AE4D28F8574600D16B34 /* Resources */,
 				4EA921FB28F5A87F00662565 /* DataView.swift */,
 				4EA921FF28F5A88000662565 /* Preview Content */,
@@ -141,9 +150,36 @@
 		4EB4AE4F28F8576200D16B34 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4EB4AE5528F868D000D16B34 /* InformationView */,
 				4EB4AE5028F857DD00D16B34 /* Buckets2022.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		4EB4AE5228F8671700D16B34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4EB4AE5328F8673600D16B34 /* BucketListItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EB4AE5528F868D000D16B34 /* InformationView */ = {
+			isa = PBXGroup;
+			children = (
+				4EB4AE5628F868E500D16B34 /* BucketListViews */,
+				4EB4AE5B28F869ED00D16B34 /* PdfKitView.swift */,
+			);
+			path = InformationView;
+			sourceTree = "<group>";
+		};
+		4EB4AE5628F868E500D16B34 /* BucketListViews */ = {
+			isa = PBXGroup;
+			children = (
+				4EB4AE5728F8690E00D16B34 /* BucketRowView.swift */,
+				4EB4AE5928F8692C00D16B34 /* BucketDetailView.swift */,
+			);
+			path = BucketListViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +315,10 @@
 			files = (
 				4EA921FC28F5A87F00662565 /* DataView.swift in Sources */,
 				4EA921FA28F5A87F00662565 /* InformationApp.swift in Sources */,
+				4EB4AE5428F8673600D16B34 /* BucketListItem.swift in Sources */,
+				4EB4AE5828F8690E00D16B34 /* BucketRowView.swift in Sources */,
+				4EB4AE5C28F869ED00D16B34 /* PdfKitView.swift in Sources */,
+				4EB4AE5A28F8692C00D16B34 /* BucketDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
