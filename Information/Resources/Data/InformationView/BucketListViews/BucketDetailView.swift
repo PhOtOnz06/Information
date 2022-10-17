@@ -9,9 +9,25 @@ import SwiftUI
 
 struct BucketDetailView: View
 {
+    var detailedBucket : BucketListItem
     var body: some View
     {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack
+        {
+            Color.purple
+                .edgesIgnoringSafeArea(.all)
+            VStack
+            {
+                Text("Year: \(detailedBucket.year)")
+                Text("OMGGGGGG")
+                Image("bucket")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                Text("DEAR GOD, A BUCKET!! NO!")
+                Text(detailedBucket.creature)
+                Text(detailedBucket.goal)
+            }
+        }
     }
 }
 
@@ -19,6 +35,6 @@ struct BucketDetailView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        BucketDetailView()
+        BucketDetailView(detailedBucket: demoBucket)
     }
 }

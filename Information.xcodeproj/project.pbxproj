@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E67C25B28FD95CA005201B9 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67C25A28FD95CA005201B9 /* Utilities.swift */; };
 		4EA921FA28F5A87F00662565 /* InformationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA921F928F5A87F00662565 /* InformationApp.swift */; };
 		4EA921FC28F5A87F00662565 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA921FB28F5A87F00662565 /* DataView.swift */; };
 		4EA921FE28F5A88000662565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA921FD28F5A88000662565 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E67C25A28FD95CA005201B9 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		4EA921F628F5A87F00662565 /* Information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Information.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA921F928F5A87F00662565 /* InformationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationApp.swift; sourceTree = "<group>"; };
 		4EA921FB28F5A87F00662565 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				4EB4AE4F28F8576200D16B34 /* Data */,
 				4EA921F928F5A87F00662565 /* InformationApp.swift */,
 				4EA921FD28F5A88000662565 /* Assets.xcassets */,
+				4E67C25A28FD95CA005201B9 /* Utilities.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				4EA921FC28F5A87F00662565 /* DataView.swift in Sources */,
 				4EA921FA28F5A87F00662565 /* InformationApp.swift in Sources */,
+				4E67C25B28FD95CA005201B9 /* Utilities.swift in Sources */,
 				4EB4AE5428F8673600D16B34 /* BucketListItem.swift in Sources */,
 				4EB4AE5828F8690E00D16B34 /* BucketRowView.swift in Sources */,
 				4EB4AE5C28F869ED00D16B34 /* PdfKitView.swift in Sources */,

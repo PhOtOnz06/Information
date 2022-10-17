@@ -11,14 +11,24 @@ struct DataView: View
 {
     var body: some View
     {
-        VStack
+        NavigationView
         {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            List
+            {
+                Section(header: Text("Buckets"))
+                {
+                    
+                }
+                Section(header: Text("Custom"))
+                {
+                    
+                }
+                Section(header: Text("Project Data"))
+                {
+                    
+                }
+            }
         }
-        .padding()
     }
 }
 
