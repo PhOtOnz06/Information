@@ -9,6 +9,9 @@ import Foundation
 
 let demoBucket : BucketListItem = BucketListItem(year: 1999, goal: "Destroy the world!!", creature: "Pochita")
 
+let randomInfoURL = Bundle.main.url(forResource: "", withExtension: "pdf")
+let dataViolationsURL = Bundle.main.url(forResource: "", withExtension: "pdf")
+
 func generateRandomEmoji (of emojiType: String) -> String
 {
     let currentEmoji : String

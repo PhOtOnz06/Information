@@ -20,18 +20,18 @@ struct CustomPDFView: View
 
 struct PDFKitRepresentedView : UIViewRepresentable
 {
-    let url : URL
+    let documentURL : URL
     
-    init (url : URL)
+    init (documentURL: URL)
     {
-        self.url = url
+        self.documentURL = documentURL
     }
     
     func makeUIView(context: Context) -> some UIView
     {
         let pdfView : PDFView = PDFView()
         
-        pdfView.document = PDFDocument(url: self.url)
+        pdfView.document = PDFDocument(url: self.documentURL)
         pdfView.autoScales = true
         pdfView.displayDirection = .horizontal
         pdfView.minScaleFactor = 0.5

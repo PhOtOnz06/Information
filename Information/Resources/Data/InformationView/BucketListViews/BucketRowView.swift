@@ -21,7 +21,7 @@ struct BucketRowView: View
             Spacer()
             VStack
             {
-                Text("Year: \(rowBucket.year)")
+                Text("Year: \(String(rowBucket.year))")
                 Text(rowBucket.creature)
             }
             .frame(minWidth: 0, maxWidth: .infinity)
