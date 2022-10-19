@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E45E3422900507D00757E1C /* VideoGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E45E3412900507D00757E1C /* VideoGames.swift */; };
+		4E45E3482900517800757E1C /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E45E3472900517800757E1C /* csvjson.json */; };
 		4E67C25B28FD95CA005201B9 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67C25A28FD95CA005201B9 /* Utilities.swift */; };
 		4EA921FA28F5A87F00662565 /* InformationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA921F928F5A87F00662565 /* InformationApp.swift */; };
 		4EA921FC28F5A87F00662565 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA921FB28F5A87F00662565 /* DataView.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E45E3412900507D00757E1C /* VideoGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGames.swift; sourceTree = "<group>"; };
+		4E45E3472900517800757E1C /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
 		4E67C25A28FD95CA005201B9 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		4EA921F628F5A87F00662565 /* Information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Information.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA921F928F5A87F00662565 /* InformationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationApp.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 			children = (
 				4EB4AE5528F868D000D16B34 /* InformationView */,
 				4EB4AE5028F857DD00D16B34 /* Buckets2022.json */,
+				4E45E3472900517800757E1C /* csvjson.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				4EB4AE5328F8673600D16B34 /* BucketListItem.swift */,
+				4E45E3412900507D00757E1C /* VideoGames.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +297,7 @@
 			files = (
 				4EA9220128F5A88000662565 /* Preview Assets.xcassets in Resources */,
 				4EB4AE5128F857DD00D16B34 /* Buckets2022.json in Resources */,
+				4E45E3482900517800757E1C /* csvjson.json in Resources */,
 				4EA921FE28F5A88000662565 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +330,7 @@
 				4EB4AE5828F8690E00D16B34 /* BucketRowView.swift in Sources */,
 				4EB4AE5C28F869ED00D16B34 /* PdfKitView.swift in Sources */,
 				4EB4AE5A28F8692C00D16B34 /* BucketDetailView.swift in Sources */,
+				4E45E3422900507D00757E1C /* VideoGames.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
