@@ -47,12 +47,6 @@ struct VideoGamesDetailView: View
                     Text("Leisure Play Length: \(detailedVideoGame.leisurePlayLength)")
                         .accessibilityLabel("Detailed Video Game Leisure Play Length")
                         .accessibilityValue("Rating: \(detailedVideoGame.leisurePlayLength)")
-                    Text("Median Game Length: \(detailedVideoGame.mediangameLength)")
-                        .accessibilityLabel("Detailed Video Game Median Game Length")
-                        .accessibilityValue("Rating: \(detailedVideoGame.mediangameLength)")
-                    Text("Rushed Game Length: \(detailedVideoGame.rushedGameLength)")
-                        .accessibilityLabel("Detailed Video Game Rushed Game Length")
-                        .accessibilityValue("Rating: \(detailedVideoGame.rushedGameLength)")
                 }
         }
         }
