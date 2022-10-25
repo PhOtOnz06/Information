@@ -7,13 +7,22 @@
 
 import Foundation
 
+
+
+
+//MARK: - Preview Values
 let demoBucket : BucketListItem = BucketListItem(year: 1999, goal: "Destroy the world!!", creature: "Pochita")
 
 let demoVideoGames : VideoGames = VideoGames(title: "Mario Kart Wii", genre: "Racing", publisher: "Nintendo", console: "Nintedo Wii", rating: "T", releaseYear: 2008, averagePlayLength: 11.4, leisurePlayLength: 30.13333333, mediangameLength: 11.5, rushedGameLength: 9.71666667)
 
+
+//MARK: - Internal URL for Files
 let randomInfoURL = Bundle.main.url(forResource: "", withExtension: "pdf")
 let dataViolationsURL = Bundle.main.url(forResource: "", withExtension: "pdf")
 
+
+
+//MARK: - Helper methods for random strings
 func generateRandomEmoji (of emojiType: String) -> String
 {
     let currentEmoji : String
@@ -58,7 +67,8 @@ func generateRandomEmoji (of emojiType: String) -> String
     return currentEmoji
 }
 
-func randomString() -> String{
+func randomString() -> String
+{
     let choice = arc4random()
     
     if (choice % 5 == 0)
@@ -83,4 +93,42 @@ func randomString() -> String{
     
     
     
+}
+
+//MARK: - Load JSON Data from device
+
+func loadJSON ( from file : String) -> [Any]
+{
+    if let dataSourceURL = Bundle.main.url(forResource: file, withExtension: "json")
+    {
+        let data = try! Data(contentsOf: dataSourceURL)
+        let decoder = JSONDecoder()
+        do
+        {
+            if (file == "Buckets2022")
+            {
+                let results = try decoder.decode([BucketListItem].self, from: data)
+                return results
+            }
+            else if (file == "csvjson")
+            {
+                let results = try decoder.decode([VideoGames].self, from: data)
+                return results
+            }
+        }
+        catch
+        {
+            print(error.localizedDescription)
+        }
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    return [Any]() // Major Data load failure!
 }

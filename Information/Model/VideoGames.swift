@@ -9,7 +9,7 @@ import Foundation
 
 
 
-struct VideoGames
+struct VideoGames : Codable
 {
     var title : String
     var genre : String
