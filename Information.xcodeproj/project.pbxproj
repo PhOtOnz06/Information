@@ -17,6 +17,7 @@
 		4EA9220B28F5A88100662565 /* InformationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9220A28F5A88100662565 /* InformationTests.swift */; };
 		4EA9221528F5A88100662565 /* InformationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9221428F5A88100662565 /* InformationUITests.swift */; };
 		4EA9221728F5A88100662565 /* InformationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9221628F5A88100662565 /* InformationUITestsLaunchTests.swift */; };
+		4EAB340F290829C00041A129 /* VideoGamesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB340E290829C00041A129 /* VideoGamesDetailView.swift */; };
 		4EB4AE5128F857DD00D16B34 /* Buckets2022.json in Resources */ = {isa = PBXBuildFile; fileRef = 4EB4AE5028F857DD00D16B34 /* Buckets2022.json */; };
 		4EB4AE5428F8673600D16B34 /* BucketListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB4AE5328F8673600D16B34 /* BucketListItem.swift */; };
 		4EB4AE5828F8690E00D16B34 /* BucketRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB4AE5728F8690E00D16B34 /* BucketRowView.swift */; };
@@ -55,6 +56,7 @@
 		4EA9221028F5A88100662565 /* InformationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InformationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA9221428F5A88100662565 /* InformationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationUITests.swift; sourceTree = "<group>"; };
 		4EA9221628F5A88100662565 /* InformationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4EAB340E290829C00041A129 /* VideoGamesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGamesDetailView.swift; sourceTree = "<group>"; };
 		4EB4AE5028F857DD00D16B34 /* Buckets2022.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Buckets2022.json; sourceTree = "<group>"; };
 		4EB4AE5328F8673600D16B34 /* BucketListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItem.swift; sourceTree = "<group>"; };
 		4EB4AE5728F8690E00D16B34 /* BucketRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketRowView.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			children = (
 				4EB4AE5628F868E500D16B34 /* BucketListViews */,
 				4EB4AE5B28F869ED00D16B34 /* PdfKitView.swift */,
+				4EAB340E290829C00041A129 /* VideoGamesDetailView.swift */,
 			);
 			path = InformationView;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				4EB4AE5828F8690E00D16B34 /* BucketRowView.swift in Sources */,
 				4EB4AE5C28F869ED00D16B34 /* PdfKitView.swift in Sources */,
 				4EB4AE5A28F8692C00D16B34 /* BucketDetailView.swift in Sources */,
+				4EAB340F290829C00041A129 /* VideoGamesDetailView.swift in Sources */,
 				4E45E3422900507D00757E1C /* VideoGames.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

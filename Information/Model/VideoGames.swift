@@ -17,9 +17,9 @@ struct VideoGames
     var console : String
     var rating : String
     var releaseYear : Int
-    var averagePlayLength : Int
-    var leisurePlayLength : Int
-    var mediangameLength : Int
-    var rushedGameLength : Int
+    var averagePlayLength : Double
+    var leisurePlayLength : Double
+    var mediangameLength : Double
+    var rushedGameLength : Double
 }
 
