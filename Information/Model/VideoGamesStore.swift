@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import Combine
+
+class VideoGamesStore: ObservableObject
+{
+    @Published var gameData : [VideoGames]
+    
+    init (videoGameData : [VideoGames])
+    {
+        self.gameData = videoGameData
+    }
+}

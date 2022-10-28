@@ -13,12 +13,15 @@ struct VideoGamesRowView: View
     
     var body: some View
     {
-        HStack {
-            Text(generateRandomEmoji(of: ""))
-            VStack
-            {
-                Text(rowVideoGames.title)
-                Text("\(rowVideoGames.releaseYear)")
+        NavigationLink(destination: VideoGamesDetailView(detailedVideoGame: rowVideoGames))
+        {
+            HStack {
+                Text(generateRandomEmoji(of: "Symbol"))
+                VStack
+                {
+                    Text(rowVideoGames.title)
+                    Text("\(rowVideoGames.releaseYear)")
+                }
             }
         }
     }

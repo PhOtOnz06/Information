@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 struct VideoGames : Codable
 {
     var title : String
