@@ -20,7 +20,7 @@ struct VideoGamesRowView: View
                 VStack
                 {
                     Text(rowVideoGames.title)
-                    Text("\(rowVideoGames.releaseYear)")
+                    Text("\(String(rowVideoGames.releaseYear))")
                 }
             }
         }

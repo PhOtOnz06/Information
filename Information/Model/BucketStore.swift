@@ -29,7 +29,7 @@ class BucketStore : ObservableObject
             let decoder = JSONDecoder()
             if let savedBuckets = try? decoder.decode([BucketListItem].self, from: storedOnDevice)
             {
-                if (savedBuckets.count != 0)
+                if (savedBuckets.count <= 100)
                 {
                     self.buckets = savedBuckets
                     return // Early return since we are loading data from the device

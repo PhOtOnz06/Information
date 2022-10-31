@@ -40,6 +40,7 @@ struct DataView: View
                         
                         VideoGamesRowView(rowVideoGames: currentVideoGames)
                     }
+                    .onDelete(perform: removeVideoGames)
                 }
                 Section(header: Text("Project Data"))
                 {
@@ -52,6 +53,11 @@ struct DataView: View
     private func removeBucketItems(at offsets: IndexSet) -> Void
     {
         storedBuckets.buckets.remove(atOffsets: offsets)
+    }
+    
+    private func removeVideoGames(at offsets: IndexSet) -> Void
+    {
+        storedVideoGames.gameData.remove(atOffsets: offsets)
     }
 }
 
