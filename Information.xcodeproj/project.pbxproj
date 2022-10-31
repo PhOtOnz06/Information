@@ -22,6 +22,7 @@
 		4EAB3411290833450041A129 /* VideoGamesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB3410290833450041A129 /* VideoGamesRowView.swift */; };
 		4EAB3413290836780041A129 /* BucketStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB3412290836780041A129 /* BucketStore.swift */; };
 		4EAF05FD29101B72009DC594 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF05FC29101B72009DC594 /* InputField.swift */; };
+		4EAF05FF29101E7C009DC594 /* AddBucketListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF05FE29101E7C009DC594 /* AddBucketListItemView.swift */; };
 		4EB4AE5128F857DD00D16B34 /* Buckets2022.json in Resources */ = {isa = PBXBuildFile; fileRef = 4EB4AE5028F857DD00D16B34 /* Buckets2022.json */; };
 		4EB4AE5428F8673600D16B34 /* BucketListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB4AE5328F8673600D16B34 /* BucketListItem.swift */; };
 		4EB4AE5828F8690E00D16B34 /* BucketRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB4AE5728F8690E00D16B34 /* BucketRowView.swift */; };
@@ -65,6 +66,7 @@
 		4EAB3410290833450041A129 /* VideoGamesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGamesRowView.swift; sourceTree = "<group>"; };
 		4EAB3412290836780041A129 /* BucketStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketStore.swift; sourceTree = "<group>"; };
 		4EAF05FC29101B72009DC594 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		4EAF05FE29101E7C009DC594 /* AddBucketListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBucketListItemView.swift; sourceTree = "<group>"; };
 		4EB4AE5028F857DD00D16B34 /* Buckets2022.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Buckets2022.json; sourceTree = "<group>"; };
 		4EB4AE5328F8673600D16B34 /* BucketListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItem.swift; sourceTree = "<group>"; };
 		4EB4AE5728F8690E00D16B34 /* BucketRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketRowView.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				4EB4AE5728F8690E00D16B34 /* BucketRowView.swift */,
 				4EB4AE5928F8692C00D16B34 /* BucketDetailView.swift */,
 				4EAB3410290833450041A129 /* VideoGamesRowView.swift */,
+				4EAF05FE29101E7C009DC594 /* AddBucketListItemView.swift */,
 			);
 			path = BucketListViews;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				4EB4AE5428F8673600D16B34 /* BucketListItem.swift in Sources */,
 				4EB4AE5828F8690E00D16B34 /* BucketRowView.swift in Sources */,
 				4EAB3411290833450041A129 /* VideoGamesRowView.swift in Sources */,
+				4EAF05FF29101E7C009DC594 /* AddBucketListItemView.swift in Sources */,
 				4EAF05FD29101B72009DC594 /* InputField.swift in Sources */,
 				4EB4AE5C28F869ED00D16B34 /* PdfKitView.swift in Sources */,
 				4EB4AE5A28F8692C00D16B34 /* BucketDetailView.swift in Sources */,
