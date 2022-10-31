@@ -13,7 +13,7 @@ import Foundation
 //MARK: - Preview Values
 let demoBucket : BucketListItem = BucketListItem(year: 1999, goal: "Destroy the world!!", creature: "Pochita")
 
-let demoVideoGames : VideoGames = VideoGames(title: "Mario Kart Wii", genre: "Racing", publisher: "Nintendo", console: "Nintedo Wii", rating: "T", releaseYear: 2008, averagePlayLength: 11.4, leisurePlayLength: 30.13333333, mediangameLength: 11.5, rushedGameLength: 9.71666667)
+let demoVideoGames : VideoGames = VideoGames(title: "Mario Kart Wii", genre: "Racing", publisher: "Nintendo", console: "Nintedo Wii", rating: "T", releaseYear: 2008, averageGameLength: 11.4, leisurePlayLength: 30.13333333, mediangameLength: 11.5, rushedGameLength: 9.71666667)
 
 
 //MARK: - Internal URL for Files

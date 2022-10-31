@@ -15,7 +15,7 @@ struct VideoGames : Codable
     var console : String
     var rating : String
     var releaseYear : Int
-    var averagePlayLength : Double
+    var averageGameLength : Double
     var leisurePlayLength : Double
     var mediangameLength : Double
     var rushedGameLength : Double
