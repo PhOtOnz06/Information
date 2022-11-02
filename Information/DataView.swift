@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DataView: View
 {
-    @ObservedObject var storedBuckets : BucketStore = BucketStore(buckets: loadJSON(from: "Buckets2022") as! [BucketListItem])
+    @EnvironmentObject var storedBuckets : BucketStore
     
     @ObservedObject var storedVideoGames = VideoGamesStore(videoGameData: loadJSON(from: "csvjson") as! [VideoGames])
     
@@ -17,35 +17,39 @@ struct DataView: View
     {
         NavigationView
         {
-            List
+            VStack
             {
-                Section(header: Text("Buckets"))
+                List
                 {
-                    ForEach (storedBuckets.buckets)
+                    Section(header: Text("Buckets"))
                     {
-                        bucket in
+                        ForEach (storedBuckets.buckets)
+                        {
+                            bucket in
+                            
+                            BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: "face"))
+                        }
+                        .onDelete(perform: removeBucketItems)
                         
-                        BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: "face"))
                     }
-                    .onDelete(perform: removeBucketItems)
-                    
-                }
-                Section(header: Text("Custom"))
-                {
-                    ForEach(storedVideoGames.gameData.indices, id : \.self)
+                    Section(header: Text("Custom"))
                     {
-                        index in
-                        
-                        let currentVideoGames = storedVideoGames.gameData[index]
-                        
-                        VideoGamesRowView(rowVideoGames: currentVideoGames)
+                        ForEach(storedVideoGames.gameData.indices, id : \.self)
+                        {
+                            index in
+                            
+                            let currentVideoGames = storedVideoGames.gameData[index]
+                            
+                            VideoGamesRowView(rowVideoGames: currentVideoGames)
+                        }
+                        .onDelete(perform: removeVideoGames)
                     }
-                    .onDelete(perform: removeVideoGames)
-                }
-                Section(header: Text("Project Data"))
-                {
-                    
-                }
+                    Section(header: Text("Project Data"))
+                    {
+                        NavigationLink("About Random", destination: CustomPDFView(documentURL: randomInfoURL))
+                        NavigationLink("Data Violations!!", destination: CustomPDFView(documentURL: dataViolationsURL))
+                    }
+            }
             }
         }
     }
@@ -66,5 +70,6 @@ struct DataView_Previews: PreviewProvider
     static var previews: some View
     {
         DataView()
+            .environmentObject(BucketStore(buckets: loadJSON(from: "Buckets2022") as! [BucketListItem]))
     }
 }

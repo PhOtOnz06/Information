@@ -17,8 +17,8 @@ let demoVideoGames : VideoGames = VideoGames(title: "Mario Kart Wii", genre: "Ra
 
 
 //MARK: - Internal URL for Files
-let randomInfoURL = Bundle.main.url(forResource: "", withExtension: "pdf")
-let dataViolationsURL = Bundle.main.url(forResource: "", withExtension: "pdf")
+let randomInfoURL = Bundle.main.url(forResource: "randomness", withExtension: "pdf")!
+let dataViolationsURL = Bundle.main.url(forResource: "data Control", withExtension: "pdf")!
 
 
 
