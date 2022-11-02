@@ -13,6 +13,8 @@ struct DataView: View
     
     @ObservedObject var storedVideoGames = VideoGamesStore(videoGameData: loadJSON(from: "csvjson") as! [VideoGames])
     
+    @State private var showAddBucketListItem : Bool = false
+    
     var body: some View
     {
         NavigationView
@@ -50,9 +52,27 @@ struct DataView: View
                         NavigationLink("Data Violations!!", destination: CustomPDFView(displayPDFURL: dataViolationsURL))
                     }
             }
+                .navigationTitle("Data and Information")
+                .toolbar
+                {
+                    ToolbarItem(placement: .navigationBarLeading)
+                    {
+                        EditButton()
+                    }
+                    ToolbarItem(placement: .navigationBarTrailing)
+                    {
+                        Button (action: {self.showAddBucketListItem.toggle() }){Image(systemName: "plus")}
+                    }
+                }
             }
         }
+        .sheet(isPresented: $showAddBucketListItem)
+        {
+            AddBucketListItemView()
+        }
     }
+    
+    
     
     private func removeBucketItems(at offsets: IndexSet) -> Void
     {
