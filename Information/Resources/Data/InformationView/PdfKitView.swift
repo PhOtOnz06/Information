@@ -10,11 +10,13 @@ import PDFKit
 
 struct CustomPDFView: View
 {
-    let documentURL: URL
+    let displayPDFURL: URL
     
     var body: some View
     {
-        PDFKitRepresentedView(documentURL: documentURL)
+        PDFKitRepresentedView(documentURL: displayPDFURL)
+            .accessibilityLabel("PDF from \(displayPDFURL)")
+            .accessibilityValue("PDF of: \(displayPDFURL)")
     }
 }
 
@@ -57,6 +59,6 @@ struct CustomPDFView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        CustomPDFView(documentURL: randomInfoURL)
+        CustomPDFView(displayPDFURL: randomInfoURL)
     }
 }

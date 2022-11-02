@@ -46,8 +46,8 @@ struct DataView: View
                     }
                     Section(header: Text("Project Data"))
                     {
-                        NavigationLink("About Random", destination: CustomPDFView(documentURL: randomInfoURL))
-                        NavigationLink("Data Violations!!", destination: CustomPDFView(documentURL: dataViolationsURL))
+                        NavigationLink("About Random", destination: CustomPDFView(displayPDFURL: randomInfoURL))
+                        NavigationLink("Data Violations!!", destination: CustomPDFView(displayPDFURL: dataViolationsURL))
                     }
             }
             }
