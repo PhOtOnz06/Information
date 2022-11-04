@@ -15,6 +15,25 @@ struct DataView: View
     
     @State private var showAddBucketListItem : Bool = false
     
+    @State private var searchedText : String = ""
+    
+    private var filteredBucketListResults : [BucketListItem]
+    {
+        if (searchedText.isEmpty)
+        {
+            return storedBuckets.buckets
+        }
+        else
+        {
+            return storedBuckets.buckets.filter
+            {
+                $0.goal.lowercased().contains(searchedText.lowercased()) ||
+                $0.creature.lowercased().contains(searchedText.lowercased()) ||
+                String($0.year) == searchedText
+            }
+        }
+    }
+    
     var body: some View
     {
         NavigationView
@@ -25,7 +44,7 @@ struct DataView: View
                 {
                     Section(header: Text("Buckets"))
                     {
-                        ForEach (storedBuckets.buckets)
+                        ForEach (filteredBucketListResults)
                         {
                             bucket in
                             
@@ -52,6 +71,7 @@ struct DataView: View
                         NavigationLink("Data Violations!!", destination: CustomPDFView(displayPDFURL: dataViolationsURL))
                     }
             }
+                .searchable(text: $searchedText)
                 .navigationTitle("Data and Information")
                 .toolbar
                 {
