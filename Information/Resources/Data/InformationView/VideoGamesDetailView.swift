@@ -53,8 +53,10 @@ struct VideoGamesDetailView: View
     }
 }
 
-struct VideoGamesDetailView_Previews: PreviewProvider {
-    static var previews: some View {
+struct VideoGamesDetailView_Previews: PreviewProvider
+{
+    static var previews: some View
+    {
         VideoGamesDetailView(detailedVideoGame: demoVideoGames)
     }
 }

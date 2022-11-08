@@ -18,12 +18,12 @@ struct BucketDetailView: View
                 .edgesIgnoringSafeArea(.all)
             VStack
             {
-                Text("Year: \(detailedBucket.year)")
-                Text("OMGGGGGG")
+                Text("Year: \(String(detailedBucket.year))")
+                Text("BUCKET!!")
                 Image("bucket")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                Text("DEAR GOD, A BUCKET!! NO!")
+                Text("DEAR GOLLY GOSH, A BUCKET!!")
                 Text(detailedBucket.creature)
                 Text(detailedBucket.goal)
             }
